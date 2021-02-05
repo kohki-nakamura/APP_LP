@@ -1,0 +1,168 @@
+html, body, h1, h2, p {
+	margin: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	color: #333;
+}
+
+header {
+	background-color: darkorange;
+	height: 500px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+header .heading {
+	color: white;
+}
+
+.heading h1 {
+	font-weight: normal;
+}
+
+.heading h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.btn-wrapper {
+	margin-top: 40px;
+}
+
+.btn {
+	background-color: white;
+	padding: 15px 40px;
+	color: darkorange;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.btn-wrapper a:hover {
+	opacity: 0.9;
+}
+
+.header-image {
+	margin-top: 40px;
+}
+
+.header-image img {
+	width: 280px;
+}
+
+.container {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.features .heading {
+	margin: 100px 0 40px;
+	text-align: center;
+}
+
+.feature-image img {
+	width: 100%;
+}
+
+.feature {
+	margin-bottom: 40px;
+}
+
+.members {
+	background-color: #f2f2f3;
+}
+
+.members .heading {
+	padding: 100px 0 40px;
+	text-align: center;
+}
+
+.member-name {
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.member-image img {
+	width: 50%;
+	border-radius: 50%;
+}
+
+.member {
+	padding-bottom: 60px;
+}
+
+.download {
+	background-color: darkorange;
+	height: 200px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.download .heading {
+	color: white;
+}
+
+.download .heading h1 {
+	font-size: 24px;
+}
+
+footer {
+	background-color: #323245;
+	padding: 64px 0;
+	color: #98969c;
+}
+
+@media(min-width: 900px) {
+	header {
+		display: flex;
+		margin: 0 auto;
+		height: 360px;
+		padding-top: 0;
+	}
+
+	header .header-info {
+		width: 60%;
+		align-self: center;
+	}
+
+	header .header-image {
+		width: 40%;
+	}
+
+	.features .feature {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.features .feature:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.features .feature-image {
+		width: 50%;
+	}
+
+	.features .text-content {
+		width: calc(50% - 32px);
+		text-align: left;
+	}
+
+	.members .container {
+		display: flex;
+	}
+
+	.member {
+		width: 33%;
+	}
+
+	.member .text-content {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
